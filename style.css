@@ -2,11 +2,12 @@ body {
   background-image: url('https://wallpaperaccess.com/full/436382.jpg');
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   padding: 20px;
   min-height: 100vh;
   box-sizing: border-box;
+  color: white;
 }
 
 .header {
@@ -33,12 +34,6 @@ body {
   max-width: 50%;
 }
 
-@media (max-width: 768px) {
-  .header {
-      flex-direction: column;
-  }
-
-  .title-section, .survey-form {
+.title-section, .survey-form {
       max-width: 100%;
-  }
 }

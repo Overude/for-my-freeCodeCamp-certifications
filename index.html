@@ -4,102 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.C. Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="title-section">
-        <h1 class="SurveyCorpsForm">Survey Corps Form</h1>
-        <p class="description">A form inspired by my fav. anime <strong>Attack On Titan</strong></p>
+    <div class="header">
+        <div class="title-section">
+            <h1 class="SurveyCorpsForm">Survey Corps Form</h1>
+            <p class="description">A form inspired by my fav. anime <strong>Attack On Titan</strong></p>
+        </div>
+
+        <form class="survey-form">
+
+            <fieldset>
+
+                <label for="name-label">State your name, recruit.
+                    <input type="text" id="name-label" placeholder="John Doe" />
+                </label><br />
+
+                <label for="email-label">Your email.
+                    <input type="email" id="email-label" placeholder="YourEmail@gmail.com" />
+                </label><br />
+
+                <label for="number-label">Your age.
+                    <input type="number" id="number-label" placeholder="1-100" min="16" max="100" required />
+                </label><br />
+
+                <label>Which option best describes your role?
+                    <select id="dropdown">
+                        <option value="" disabled selected>Select a role</option>
+                        <option value="1">Commander</option>
+                        <option value="2">Soldiers</option>
+                        <option value="3">Elite Soldiers</option>
+                        <option value="4">Squad leaders</option>
+                        <option value="5">Medical Personnel</option>
+                    </select>
+                </label><br />
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Would you recommend joining Survey Corps to a friend?</legend>
+                <label>
+                    <input type="radio" name="option"/>Definitely
+                </label>
+                <label>
+                    <input type="radio" name="option"/>Maybe
+                </label>
+                <label>
+                    <input type="radio" name="option"/>Not sure
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <label>What is your greatest strength that would benefit the Survey Corps?
+                    <select id="dropdown">
+                        <option value="" disabled selected>Select a strength</option>
+                        <option value="1">Combat Prowess</option>
+                        <option value="2">Mental Fortitude</option>
+                        <option value="3">Teamwork and Communication</option>
+                        <option value="4">Adaptability and Resourcefulness</option>
+                        <option value="5">Tech Expertise</option>
+                    </select>
+                </label><br />
+
+
+
+                <legend>In what areas do you wish to improve?</legend>
+                <label>
+                    <input type="checkbox">Physical Fitness
+                </label>
+                <label>
+                    <input type="checkbox">Mental Toughness
+                </label>
+                <label>
+                    <input type="checkbox">Teamwork Skills
+                </label>
+                <label>
+                    <input type="checkbox">ODM Gear Maneuvering (if applicable)
+                </label>
+                <label>
+                    <input type="checkbox">Strategic Thinking
+                </label>
+                <label>
+                    <input type="checkbox">Technological Knowledge (if applicable)
+                </label><br />
+
+
+                <label>Explain, in your own words, why you believe you possess the qualities necessary to join the Survey Corps and contribute to humanity's survival.
+                    <textarea name="bio" id="bio" placeholder="Walls can't hold my spirit. Fight for a future, even if it costs everything." rows="5" cols="30"></textarea>
+                </label><br />
+
+                <input type="submit"  value="Submit"/>
+
+            </fieldset>
+            
+        </form>
     </div>
-
-    <form class="survey-form">
-
-        <fieldset>
-
-            <label for="name-label">State your name, recruit.
-                <input type="text" id="name-label" placeholder="John Doe" />
-            </label>
-
-            <label for="email-label">Your email.
-                <input type="email" id="email-label" placeholder="YourEmail@gmail.com" />
-            </label>
-
-            <label for="number-label">Your age.
-                <input type="number" id="number-label" placeholder="1-100" min="16" max="100" required />
-            </label>
-
-            <label>Which option best describes your role?
-                <select id="dropdown">
-                    <option value="" disabled selected>Select a role</option>
-                    <option value="1">Commander</option>
-                    <option value="2">Soldiers</option>
-                    <option value="3">Elite Soldiers</option>
-                    <option value="4">Squad leaders</option>
-                    <option value="5">Medical Personnel</option>
-                </select>
-            </label>
-
-        </fieldset>
-
-        <fieldset>
-
-            <legend>Would you recommend joining Survey Corps to a friend?</legend>
-            <label>
-                <input type="radio" name="option"/>Definitely
-            </label>
-            <label>
-                <input type="radio" name="option"/>Maybe
-            </label>
-            <label>
-                <input type="radio" name="option"/>Not sure
-            </label>
-
-        </fieldset>
-
-        <fieldset>
-
-            <label>What is your greatest strength that would benefit the Survey Corps?
-                <select id="dropdown">
-                    <option value="" disabled selected>Select a strength</option>
-                    <option value="1">Combat Prowess</option>
-                    <option value="2">Mental Fortitude</option>
-                    <option value="3">Teamwork and Communication</option>
-                    <option value="4">Adaptability and Resourcefulness</option>
-                    <option value="5">Tech Expertise</option>
-                </select>
-            </label>
-
-
-
-            <legend>In what areas do you wish to improve?</legend>
-            <label>
-                <input type="checkbox">Physical Fitness
-            </label>
-            <label>
-                <input type="checkbox">Mental Toughness
-            </label>
-            <label>
-                <input type="checkbox">Teamwork Skills
-            </label>
-            <label>
-                <input type="checkbox">ODM Gear Maneuvering (if applicable)
-            </label>
-            <label>
-                <input type="checkbox">Strategic Thinking
-            </label>
-            <label>
-                <input type="checkbox">Technological Knowledge (if applicable)
-            </label>
-
-
-            <label>Explain, in your own words, why you believe you possess the qualities necessary to join the Survey Corps and contribute to humanity's survival.
-                <textarea name="bio" id="bio" placeholder="Walls can't hold my spirit. Fight for a future, even if it costs everything."></textarea>
-            </label>
-
-        </fieldset>
-        
-    </form>
-
 </body>
 </html>
