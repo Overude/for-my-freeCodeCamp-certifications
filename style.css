@@ -1,39 +1,65 @@
-body {
-  background-image: url('https://wallpaperaccess.com/full/436382.jpg');
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 20px;
-  min-height: 100vh;
-  box-sizing: border-box;
-  color: white;
+@import url(https://fonts.google.com/share?selection.family=Edu+AU+VIC+WA+NT+Hand:wght@400..700);
+
+#main {
+  margin: 10px 5px 25px 5px;
+  background-color: beige;
+  padding-bottom: 10px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 20px;
+#title, p {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-align: center;
 }
 
-.title-section {
-  max-width: 50%;
+#title-p {
+  letter-spacing: 5px;
+  font-size: 1em;
 }
 
-.SurveyCorpsForm {
-  margin: 0;
+#img-div {
+  display: block;
+  background-color: rgb(234, 243, 235);
+  padding: 10px 5%;
+  margin: 0 15px;
+  border: 3px dotted red;
+  border-radius: 2em;
 }
 
-.description {
-  margin-top: 10px;
+#image {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
-.survey-form {
-  flex-grow: 1;
-  max-width: 50%;
+#img-caption {
+  text-align: center;
+  font-size: 15px;
 }
 
-.title-section, .survey-form {
-      max-width: 100%;
+h3 {
+  text-align: center;
+}
+
+dl {
+  display: block;
+  justify-content: center;
+  padding: 0 5% 0 20%;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 25px;
+}
+
+#quote {
+  margin: 50px 35px 0 35px;
+}
+
+span {
+  display: block;
+  margin-top: 20px;
 }
