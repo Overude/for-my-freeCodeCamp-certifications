@@ -1,0 +1,39 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/436382.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .title-section {
+    max-width: 50%;
+  }
+  
+  .SurveyCorpsForm {
+    margin: 0;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+  
+  .survey-form {
+    flex-grow: 1;
+    max-width: 50%;
+  }
+  
+  .title-section, .survey-form {
+        max-width: 100%;
+  }
