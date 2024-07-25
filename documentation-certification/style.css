@@ -1,0 +1,121 @@
+* {
+    margin:  0;
+    padding: 0;
+    outline: none;
+    border:  none;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}  
+
+body {
+    max-width: 800px;
+}
+
+#navbar {
+    position: fixed;
+    left:   0;
+    top:    0;
+    bottom: 0;
+    height: 100%;
+    background: grey;
+    width: 200px;
+    max-width: 200px;
+    display: block;
+}
+
+#navbar > header {
+    font-weight: bold;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+#navbar span{
+    font-style: italic;
+}
+
+#navbar a{
+    color: black;
+    display: block;
+    gap: 50px;
+    margin: 0 auto 10px 30px;
+}
+
+.line {
+    border: 1px rgb(217, 205, 205) solid;
+    margin-bottom: 10px;
+}
+
+#final-line {
+    border: 4px rgb(169, 155, 155) solid;
+}
+
+main {
+    position: relative;
+    left: 250px;
+    width: 800px;
+    max-width: 1000px;
+}
+
+main header {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+main section > p{
+    position: relative;
+    left: 200px;
+}
+
+main section pre > code {
+    position: relative;
+    left: 200px;
+}
+section ul {
+    position: relative;
+    left: 200px;
+    font-weight: bold;
+}
+
+#Roadmap_Siete {
+    margin-bottom: 50px;
+}
+
+footer {
+    position: relative;
+    left: 300px;
+    text-align: center;
+}
+
+@media screen and (max-width: 510px) {
+    #navbar {
+        width: 100px;
+    }
+
+    #navbar header {
+        font-size: 0.7rem;
+    }
+
+    #navbar a {
+        position: relative;
+        left: -15px;
+        text-align: center;
+    }
+
+    main {
+        position: relative;
+        left: -100px;
+        width: 600px;
+        max-width: 800px;
+    }
+
+    main section > header {
+        text-align: center;
+        font-style: italic;
+    }
+}
