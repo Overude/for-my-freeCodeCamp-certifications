@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(to right, rgb(185, 56, 214), rgb(228, 26, 161));
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0 19px 25px;
+}
+
+#shield {
+    height: 55px;
+    margin-left: 60px;
+}
+
+#logo {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: #93e4d7;
+    display: flex;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-self: center;
+    margin-left: -38rem;
+    cursor: pointer;
+}
+
+#nav-ul {
+    display: flex;
+    align-items: center;
+}
+
+#nav-ul > li {
+    list-style: none;
+    margin-right: 40px;
+    margin-left: 10px;
+    color: rgb(219, 225, 231);
+    font-size: 1.1rem;
+    padding: 20px;
+    border-left: 2px double rgb(219, 225, 231);
+    cursor: pointer;
+}
+
+#nav-ul > li:hover {
+    color: rgb(24, 218, 252);
+}
+
+
+#greeting {
+    display: inline-block;
+    text-align: center;
+    margin-left: 235px;
+    margin-top: 50px;
+    color: rgb(166, 237, 237);
+}
+
+.line {
+    background-color: rgb(5, 187, 253);
+    height: 2px;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.intro {
+    color: rgb(166, 237, 237);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#current {
+    color: rgb(68, 9, 97);
+}
+
+#soon {
+    color: rgb(132, 8, 105);
+}
+
+img {
+    position: absolute;
+    right: 8px;
+    bottom: 50px;
+}
+
+button {
+    margin-top: 23px;
+    margin-left: 300px;
+    padding: 5px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(185, 56, 214), rgb(228, 26, 161));
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 70px;
+    text-align: center;
+}
