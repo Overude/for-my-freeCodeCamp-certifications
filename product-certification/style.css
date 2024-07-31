@@ -1,0 +1,341 @@
+/* STORE */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --background: #B6D6CC;
+    --text: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM Sans, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+/* HEADER */
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--background);
+}
+
+#brand-container {
+    margin: 25px 35px;
+}
+
+#brand-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#header-img {
+    width: 60px;
+}
+
+#brand::before {
+    content: "Language";
+    display: block;
+    opacity: 0.7;
+    font-size: 13px;
+    text-align: center;
+
+    margin-bottom: -5px;
+}
+
+#brand:hover::before {
+    color: rgb(4, 92, 17);
+}
+
+#brand {
+    font-size: 1.6rem;
+    padding-left: 4vh;
+}
+
+#brand-left {
+    color: rgb(94, 94, 250);
+}
+
+#brand-right {
+    color: rgb(244, 28, 28);
+}
+
+#nav-bar {
+    width: 35%;
+
+}
+
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    margin-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text);
+    letter-spacing: 0.6px;
+}
+
+#nav-bar ul li a:hover {
+    border-radius: 6px;
+    box-shadow: #000000 10px -1px 28px 1px;
+}
+
+main {
+    position: relative;
+    top: 10rem;
+}
+
+#email-section {
+    margin: auto;
+    width: 500px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#email-section h3 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+form {
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#email {
+    margin: 20px 0 5px 0;
+    height: 25px;
+    width: 200px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    opacity: .7;
+    color: white;
+}
+
+#submit {
+    width: 5rem;
+    padding: 2px;
+    background-color:antiquewhite;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.fi {
+    font-size: 3.2rem;
+    margin-right: 50px;
+}
+
+#features {
+    width: 810px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    margin: auto auto 45px auto;
+}
+
+.paragraph h4{
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+#yt {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 70px;
+}
+
+.pricings {
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f5f5f5;
+}
+
+.pricings h5:first-child {
+    background-color: antiquewhite;
+    font-size: 1.8rem;
+    padding: 20px 55px;
+}
+
+.pricings h5:last-of-type {
+    font-size: 7vh;
+    font-weight: normal;
+}
+
+#best-price::after {
+    content: "₱3000";
+    font-size: 13px;
+    text-decoration: line-through;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: #00000048;
+    margin: auto auto 50px auto;
+}
+
+.pricings p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 100%;
+}
+
+button {
+    margin: 3rem auto 2rem auto;
+    height: 2rem;
+    width: 5rem;
+    background-color: azure;
+    border-style: double;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button:hover {
+    background-color:rgb(249, 249, 244);
+}
+
+button:active {
+    background-color:beige;
+}
+
+footer address {
+    width: 86%;
+    margin: auto;
+    position: relative;
+    bottom: -200px;
+    display: block;
+    justify-content: center;
+    background-color: rgb(179, 173, 166);
+    padding: 20px 20px 0 0;
+}
+
+footer address:first-of-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer address a {
+    display: flex;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 6px;
+}
+
+footer address:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    color: #00000092;
+}
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    #header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #brand-container {
+      margin: 15px 0;
+    }
+  
+    #nav-bar {
+      width: 100%;
+    }
+  
+    #nav-bar ul {
+      margin: 10px 0;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    /* Main content adjustments */
+    main {
+        top: 12rem;
+    }
+  
+    #email-section {
+      width: 90%;
+    }
+  
+    #features {
+      width: 90%;
+    }
+  
+    .feature {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .fi {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    #video {
+      width: 90%;
+      height: auto;
+    }
+  
+    /* Pricing section adjustments */
+    #pricing {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricings {
+      width: 80%;
+      margin-bottom: 100px;
+    }
+  
+    /* Footer adjustments */
+    footer address {
+      width: 100%;
+      bottom: -100px;
+    }
+  }
